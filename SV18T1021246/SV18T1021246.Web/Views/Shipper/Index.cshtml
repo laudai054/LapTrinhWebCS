@@ -1,13 +1,14 @@
-﻿@{
+﻿@model SV18T1021246.Web.Models.ShipperPaginationResultModel
+@{
     ViewBag.Title = "Người giao hàng";
 }
 <!-- Default box -->
 <div class="box" style="">
-    <form action="#" method="get">
+    <form action="~/shipper" method="get">
         <div class="input-group">
             <input type="text" name="searchValue"
                    class="form-control"
-                   placeholder="Nhập tên hoặc địa chỉ khách hàng cần tìm...">
+                   placeholder="Nhập tên người giao hàng cần tìm..." autofocus value="@Model.SearchValue">
             <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat btn-info">
                     <i class="fa fa-search"></i>
@@ -23,7 +24,7 @@
     </div>
     <div class="row" style="margin: 1px 0 10px 0;">
         <div class="col-sm-12">
-            Có <strong>1,254</strong> khách hàng trong tổng số <strong>100</strong> trang
+            Có <strong>@Model.RowCount</strong> shipper trong tổng số <strong>@Model.PageCount</strong> trang
         </div>
     </div>
     <div class="box-body">
@@ -38,20 +39,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @for (int i = 1; i <= 10; i++)
+                    @foreach (var item in Model.Data)
                     {
-                        <tr>
-                            <td>Bình Gold</td>
-                            <td>25235</td>
-                            <td class="text-right">
-                                <a href="~/shipper/edit/123" class="btn btn-xs btn btn-flat btn-info">
-                                    <i class="fa fa-edit"></i>
-                                </a>
-                                <a href="~/shipper/delete/123" class="btn btn-xs btn btn-flat btn-danger">
-                                    <i class="fa fa-remove"></i>
-                                </a>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td>@item.ShipperName</td>
+                        <td>@item.Phone </td>
+                        <td class="text-right">
+                            <a href="~/shipper/edit/@item.ShipperID" class="btn btn-xs btn btn-flat btn-info">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <a href="~/shipper/delete/@item.ShipperID" class="btn btn-xs btn btn-flat btn-danger">
+                                <i class="fa fa-remove"></i>
+                            </a>
+                        </td>
+                    </tr>
                     }
                 </tbody>
             </table>
@@ -62,11 +63,16 @@
         <div class="container-fluid">
             <div class="text-center">
                 <ul class="pagination">
-                    <li><a href="#">1</a></li>
-                    <li class="active"><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
+                    @for (int i = 1; i <= Model.PageCount; i++)
+                    {
+                        if (i == Model.Page)
+                        {
+                            <li class="active"><a href="#">@i</a></li>
+                        }
+                        else
+                        {
+                            <li><a href="~/shipper?page=@i&seachValue=@Model.SearchValue">@i</a></li>}
+                        }
                 </ul>
             </div>
         </div>

@@ -3,3 +3,15 @@ D:\SV18T1021246\SV18T1021246\SV18T1021246.DomainModel\bin\Debug\SV18T1021246.Dom
 D:\SV18T1021246\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.csproj.CoreCompileInputs.cache
 D:\SV18T1021246\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.dll
 D:\SV18T1021246\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.pdb
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.DomainModel\bin\Debug\SV18T1021246.DomainModel.dll
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.DomainModel\bin\Debug\SV18T1021246.DomainModel.pdb
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.csproj.CoreCompileInputs.cache
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.dll
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.pdb
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.csproj.AssemblyReference.cache
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.DomainModel\bin\Debug\SV18T1021246.DomainModel.dll
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.DomainModel\bin\Debug\SV18T1021246.DomainModel.pdb
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.csproj.AssemblyReference.cache
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.csproj.CoreCompileInputs.cache
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.dll
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.pdb

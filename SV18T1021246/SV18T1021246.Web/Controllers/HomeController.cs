@@ -29,10 +29,12 @@ namespace SV18T1021246.Web.Controllers
             return View();
         }
 
+        /*
         public ActionResult Categories()
         {
             var model = CommonDataService.ListOfCategories();
             return View(model);
         }
+        */
     }
 }

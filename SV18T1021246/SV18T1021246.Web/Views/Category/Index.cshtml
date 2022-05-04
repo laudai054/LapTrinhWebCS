@@ -1,14 +1,15 @@
 ﻿
+@model SV18T1021246.Web.Models.CategoryPaginationResultModel
 @{
     ViewBag.Title = "Loại hàng";
 }
 <!-- Default box -->
 <div class="box" style="">
-    <form action="#" method="get">
+    <form action="~/category" method="get">
         <div class="input-group">
             <input type="text" name="searchValue"
                    class="form-control"
-                   placeholder="Nhập tên hoặc địa chỉ khách hàng cần tìm...">
+                   placeholder="Nhập tên hoặc thông tin mặt hàng... " autofocus value="@Model.SearchValue">
             <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat btn-info">
                     <i class="fa fa-search"></i>
@@ -19,12 +20,13 @@
             </span>
         </div>
     </form>
+
     <div class="box-header with-border">
         <h3 class="box-title"></h3>
     </div>
     <div class="row" style="margin: 1px 0 10px 0;">
         <div class="col-sm-12">
-            Có <strong>1,254</strong> khách hàng trong tổng số <strong>100</strong> trang
+            Có <strong>@Model.RowCount</strong> sản phẩm tổng số <strong>@Model.PageCount</strong> trang
         </div>
     </div>
     <div class="box-body">
@@ -34,23 +36,21 @@
                     <tr class="bg-primary">
                         <th>Tên loại hàng:</th>
                         <th>Mô tả</th>
-                        <th>họ loại hàng</th>
                         <th style="width:75px">&nbsp;
                         <th>
                     </tr>
                 </thead>
                 <tbody>
-                    @for (int i = 1; i <= 10; i++)
+                    @foreach (var item in Model.Data)
                     {
                         <tr>
-                            <td>xoài</td>
-                            <td>ngọt</td>
-                            <td>trái cây</td>
+                            <td>@item.CategoryName</td>
+                            <td>@item.Description</td>
                             <td class="text-right">
-                                <a href="~/category/edit/123" class="btn btn-xs btn btn-flat btn-info">
+                                <a href="~/category/edit/@item.CategoryID" class="btn btn-xs btn btn-flat btn-info">
                                     <i class="fa fa-edit"></i>
                                 </a>
-                                <a href="~/category/delete/123" class="btn btn-xs btn btn-flat btn-danger">
+                                <a href="~/category/delete/@item.CategoryID" class="btn btn-xs btn btn-flat btn-danger">
                                     <i class="fa fa-remove"></i>
                                 </a>
                             </td>
@@ -65,11 +65,16 @@
         <div class="container-fluid">
             <div class="text-center">
                 <ul class="pagination">
-                    <li><a href="#">1</a></li>
-                    <li class="active"><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
+                    @for (int i = 1; i <= Model.PageCount; i++)
+                    {
+                        if (i == Model.Page)
+                        {
+                            <li class="active"><a href="#">@i</a></li>
+                         }
+                         else
+                         {
+                              <li><a href="~/category?page=@i&seachValue=@Model.SearchValue">@i</a></li>}
+                         }
                 </ul>
             </div>
         </div>

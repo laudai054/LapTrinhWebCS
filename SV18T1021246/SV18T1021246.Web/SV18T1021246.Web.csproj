@@ -117,6 +117,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppCodes\SelectListHelper.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -132,6 +133,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CategoryPaginationResultModel.cs" />
+    <Compile Include="Models\CustomerPaginationResultModel.cs" />
+    <Compile Include="Models\EmployeePaginationResultModel.cs" />
+    <Compile Include="Models\PaginationResultModel.cs" />
+    <Compile Include="Models\ProductPaginationResultModel.cs" />
+    <Compile Include="Models\ShipperPaginationResultModel.cs" />
+    <Compile Include="Models\SupplierPaginationResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -5679,7 +5687,6 @@
     <Content Include="Views\Home\Categories.cshtml" />
     <Content Include="Views\Order\Index.cshtml" />
     <Content Include="Views\Order\Create.cshtml" />
-    <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Shipper\Index.cshtml" />
     <Content Include="Views\Shipper\Create.cshtml" />
     <Content Include="Views\Shipper\Delete.cshtml" />
@@ -5798,10 +5805,21 @@
     <Content Include="Views\Shared\_SideBar.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Customer\Create - Copy.cshtml" />
+    <Content Include="Views\Supplier\Create - Copy.cshtml" />
+    <Content Include="Views\Shipper\Create - Copy.cshtml" />
+    <Content Include="Views\Category\Create - Copy.cshtml" />
+    <Content Include="Views\Product\Attribute.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\Product\Delete.cshtml" />
+    <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\Photo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Images\Employees\" />
+    <Folder Include="Images\Products\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

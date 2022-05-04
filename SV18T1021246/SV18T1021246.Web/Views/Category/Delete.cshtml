@@ -1,4 +1,6 @@
 ﻿
+
+@model SV18T1021246.DomainModel.Category
 @{
     ViewBag.Title = "Xóa loại hàng";
 }
@@ -10,32 +12,32 @@
 
     </div>
     <div class="box-body">
-        <form class="form-horizontal" action="/action_page.php">
+        <form class="form-horizontal" action="~/category/delete/@Model.CategoryID" method="post">
             <div class="form-group">
                 <label class="control-label col-sm-2">Tên loại hàng:</label>
                 <div class="col-sm-10">
-                    <p class="form-control-static">xoài</p>
+                    <p class="form-control-static">@Model.CategoryName</p>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2">Mô tả:</label>
                 <div class="col-sm-10">
-                    <p class="form-control-static">ngon</p>
+                    <p class="form-control-static">@Model.Description</p>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2">Họ loại hàng:</label>
                 <div class="col-sm-10">
-                    <p class="form-control-static">trái cây</p>
+                    <p class="form-control-static">Food</p>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <button type="submit" class="btn btn-danger">
-                        <i class="fa fa-remove"></i>Dong y xoa
+                        <i class="fa fa-remove"></i> Đồng ý xóa
                     </button>
                     <a class="btn btn-warning" href="~/category">
-                        <i class="fa fa-ban"></i> bỏ wa
+                        <i class="fa fa-ban"></i> Bỏ qua
                     </a>
                 </div>
             </div>

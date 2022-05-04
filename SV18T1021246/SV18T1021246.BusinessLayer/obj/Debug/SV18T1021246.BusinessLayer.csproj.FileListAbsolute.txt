@@ -9,3 +9,25 @@ D:\SV18T1021246\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.B
 D:\SV18T1021246\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.csproj.CopyComplete
 D:\SV18T1021246\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.dll
 D:\SV18T1021246\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.pdb
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.BusinessLayer.dll
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.BusinessLayer.pdb
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.DataLayer.dll
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.DomainModel.dll
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.DataLayer.pdb
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.DomainModel.pdb
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.csproj.AssemblyReference.cache
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.csproj.CoreCompileInputs.cache
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.csproj.CopyComplete
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.dll
+D:\PhamVanPhuoc_Web\LapTrinhWebCS-main\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.pdb
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.BusinessLayer.dll
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.BusinessLayer.pdb
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.DataLayer.dll
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.DomainModel.dll
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.DataLayer.pdb
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\bin\Debug\SV18T1021246.DomainModel.pdb
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.csproj.AssemblyReference.cache
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.csproj.CoreCompileInputs.cache
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.csproj.CopyComplete
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.dll
+E:\My Process\Web\Webmayrac-main\SV18T1021246\SV18T1021246.BusinessLayer\obj\Debug\SV18T1021246.BusinessLayer.pdb
