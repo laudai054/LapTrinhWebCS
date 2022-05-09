@@ -19,14 +19,13 @@ namespace SV18T1021246.Web.Controllers
         /// 
         /// </summary>
         /// <returns></returns>
-        public ActionResult Index(int page = 1, string searchValue = "", int categoryID=0, int supplierID =0 )
+        public ActionResult Index(int page = 1, string searchValue = "", int categoryID = 0, int supplierID = 0)
         {
             int pageSize = 10;
             int rowCount = 0;
             int pageMax = 1000;
             int rowNull = -1;
             var data = ProductDataService.ListOfProducts(page, pageSize, searchValue, out rowCount, categoryID, supplierID);
-            //var data2 = CommonDataService.ListOfProducts(page, pageMax, searchValue, out rowCount, categoryID, supplierID);
             var catID = CommonDataService.ListOfCategories(1,
                                                          pageMax,
                                                          "",
@@ -116,6 +115,7 @@ namespace SV18T1021246.Web.Controllers
         [Route("edit/{productID}")]
         public ActionResult Edit(string productID)
         {
+
             int rowNull = -1;
             int pageMax = 1000;
             var catID = CommonDataService.ListOfCategories(1,
@@ -126,6 +126,8 @@ namespace SV18T1021246.Web.Controllers
                                                         pageMax,
                                                         "",
                                                         out rowNull);
+            //PA = ProductAttribute
+            var dataPA = ProductDataService.ListOfProductAttribute();
             int id = 0;
             try
             {
@@ -147,13 +149,15 @@ namespace SV18T1021246.Web.Controllers
                 SupplierID = listProID.SupplierID,
                 Unit = listProID.Unit,
                 categories = catID,
-                suppliers = supID
+                suppliers = supID,
+                productAttributes = dataPA
             };
             if (model == null)
                 return RedirectToAction("Index");
 
             ViewBag.Title = "Cập nhật thông tin nhân viên";
-            return View("Create", model);
+            //return View("Create", model);
+            return View(model);
         }
         /// <summary>
         /// 
@@ -206,6 +210,7 @@ namespace SV18T1021246.Web.Controllers
         /// <param name="productID"></param>
         /// <param name="attributeID"></param>
         /// <returns></returns>
+      
         [Route("attribute/{method}/{productID}/{attributeID?}")]
         public ActionResult Attribute(string method, int productID, int? attributeID)
         {

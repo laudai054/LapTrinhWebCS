@@ -12,6 +12,7 @@ namespace SV18T1021246.BusinessLayer
     public static class ProductDataService
     {
         private static readonly IProductDAL productDB;
+        private static readonly IProductAttributeDAL productAttributeDB;
 
         static ProductDataService()
         {
@@ -22,8 +23,9 @@ namespace SV18T1021246.BusinessLayer
             {
                 case "SQLServer":
                     productDB = new DataLayer.SQLServer.ProductDAL(connectionString);
+                    productAttributeDB = new DataLayer.SQLServer.ProductAttributeDAL(connectionString);
                     break;
-                default :
+                default:
                     break;
             }
         }
@@ -63,5 +65,28 @@ namespace SV18T1021246.BusinessLayer
         {
             return productDB.InUsed(productID);
         }
+
+        public static ProductAttribute GetProductAttribute(int attributeID)
+        {
+            return productAttributeDB.Get(attributeID);
+        }
+
+        public static List<ProductAttribute> ListOfProductAttribute()
+        {
+            return productAttributeDB.List().ToList();
+        }
+        public static int AddProductAttribute(ProductAttribute data)
+        {
+            return productAttributeDB.Add(data);
+        }
+        public static bool UpdateProductAttribute(ProductAttribute data)
+        {
+            return productAttributeDB.Update(data);
+        }
+        public static bool DeleteProductAttribute(int attributeID)
+        {
+            return productAttributeDB.Delete(attributeID);
+        }
     }
+
 }

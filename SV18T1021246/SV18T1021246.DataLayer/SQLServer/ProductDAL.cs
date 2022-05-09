@@ -211,10 +211,10 @@ namespace SV18T1021246.DataLayer.SQLServer
                 searchValue = "%" + searchValue + "%";
 
 
-            using(SqlConnection cn = OpenConnection())
+            using (SqlConnection cn = OpenConnection())
             {
                 SqlCommand cmd = new SqlCommand();
-                Console.Write(categoryID+"id;"+ supplierID);
+                Console.Write(categoryID + "id;" + supplierID);
 
                 cmd.CommandText = @"select *
                                     from

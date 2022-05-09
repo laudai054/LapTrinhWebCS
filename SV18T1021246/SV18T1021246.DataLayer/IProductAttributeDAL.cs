@@ -15,6 +15,8 @@ namespace SV18T1021246.DataLayer
 
         bool Delete(int attributeID);
 
+        ProductAttribute Get(int attributeID);
+
         IList<ProductAttribute> List();
     }
 }

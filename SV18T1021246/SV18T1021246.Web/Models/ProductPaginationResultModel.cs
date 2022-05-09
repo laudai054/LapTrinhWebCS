@@ -11,6 +11,5 @@ namespace SV18T1021246.Web.Models
         public List<Product> Data { get; set; }
         public List<Category> catID { get; set; }
         public List<Supplier> supID { get; set; }
-
     }
 }
