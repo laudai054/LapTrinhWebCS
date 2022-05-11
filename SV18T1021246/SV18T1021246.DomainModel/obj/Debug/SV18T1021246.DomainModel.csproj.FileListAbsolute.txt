@@ -13,3 +13,4 @@ E:\My Process\Web\Webmayrac 2\Webmayrac-main\SV18T1021246\SV18T1021246.DomainMod
 E:\My Process\Web\Webmayrac 2\Webmayrac-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.csproj.CoreCompileInputs.cache
 E:\My Process\Web\Webmayrac 2\Webmayrac-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.dll
 E:\My Process\Web\Webmayrac 2\Webmayrac-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.pdb
+E:\My Process\Web\Webmayrac 2\Webmayrac-main\SV18T1021246\SV18T1021246.DomainModel\obj\Debug\SV18T1021246.DomainModel.csproj.AssemblyReference.cache

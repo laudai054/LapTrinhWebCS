@@ -17,6 +17,7 @@ namespace SV18T1021246.BusinessLayer
     {
         //private static readonly ICustomerDAL customerDB;
         private static readonly ICountryDAL countryDB;
+        private static readonly IAccountDAL accountDB;
         private static readonly ICommonDAL<Customer> customerDB;
         private static readonly ICommonDAL<Category> categoryDB;
         private static readonly ICommonDAL<Employee> employeeDB;
@@ -39,6 +40,7 @@ namespace SV18T1021246.BusinessLayer
                     shipperDB = new DataLayer.SQLServer.ShipperDAL(connectionString);
                     employeeDB = new DataLayer.SQLServer.EmployeeDAL(connectionString);
                     countryDB = new DataLayer.SQLServer.CountryDAL(connectionString);
+                    accountDB = new DataLayer.SQLServer.AccountDAL(connectionString);
                     break;
                 default:
                     //categoryDB = new DataLayer.FakeDB.CategoryDAL();
@@ -303,6 +305,24 @@ namespace SV18T1021246.BusinessLayer
         public static List<Country> ListOfCountries()
         {
             return countryDB.List().ToList();
+        }
+
+        //------------------------------------------------------------------------------------------
+        public static bool LoginAccount(string username, string password)
+        {
+            return accountDB.Login(username, password);
+        }
+        public static bool ChangePassword(Account data)
+        {
+            return accountDB.ChangePassword(data);
+        }
+        public static Account GetAccount(int employeeID)
+        {
+            return accountDB.Get(employeeID);
+        }
+        public static Account GetAccountUsername(string username)
+        {
+            return accountDB.GetUsername(username);
         }
     }
 }
