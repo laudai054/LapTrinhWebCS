@@ -16,6 +16,14 @@ namespace SV18T1021246.Web.Controllers
         /// 
         /// </summary>
         /// <returns></returns>
+        protected void SetAlert(string message, bool type)
+        {
+            TempData["AlertMessage"] = message;
+            if (type == true)
+            {
+                TempData["AlertType"] = "alert-success";
+            }
+        }
         [AllowAnonymous]
         [HttpGet]
         public ActionResult Login()
@@ -71,8 +79,9 @@ namespace SV18T1021246.Web.Controllers
             return View("ChangePassword", model);
         }
         [HttpPost]
-        public ActionResult Save(Account model)
+        public ActionResult Save(Account model,bool type = true)
         {
+            string message = string.Empty;
             //Kiểm tra dữ liệu đầu vào
             if (string.IsNullOrWhiteSpace(model.Email))
                 ModelState.AddModelError("Email", "Email không hợp lệ");
@@ -94,6 +103,8 @@ namespace SV18T1021246.Web.Controllers
             if (model.EmployeeID > 0)
             {
                 CommonDataService.ChangePassword(model);
+                message = "Thay đổi mật khẩu thành công!";
+                SetAlert(message, type);
             }
             return RedirectToAction("Index", "Home");
         }

@@ -1,3 +1,14 @@
-﻿@{
-    ViewBag.Title = "Trang chủ";
+﻿@{ ViewBag.Title = "Trang chủ"; }
+@if (TempData["AlertMessage"] != null)
+{
+<div style="float:right;width:26%" class="alert @TempData["AlertType"] hide" id="AlertBox" role="alert">
+    @TempData["AlertMessage"]
+</div>}
+@section scripts {
+    <script>
+        $(function () {
+            $('#AlertBox').removeClass('hide');
+            $('#AlertBox').delay(3500).slideUp(600);
+        });
+    </script>
 }
